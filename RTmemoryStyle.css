@@ -181,7 +181,7 @@ body {
     bottom: -3px;
     width: 0;
     height: 2px; /* Высота линии */
-    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    background-color: rgb(23, 81, 254); /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s; /* Время эффекта */
 }
 
@@ -210,7 +210,7 @@ body {
     bottom: -3px;
     width: 0;
     height: 2px; /* Высота линии */
-    background-color: rgba(23, 81, 254, 0); /* Цвет подчеркивания при исчезании линии*/
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s; /* Время эффекта */
 }
 
