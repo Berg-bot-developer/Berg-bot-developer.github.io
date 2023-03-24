@@ -256,9 +256,13 @@ body {
     border-radius: 100%;
     position: relative;
     animation: down 1.5s infinite;
-    margin: 18px auto 42px auto;
     box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .circular-arrow::before {
     content: '';
     position: absolute;
@@ -285,5 +289,6 @@ body {
   .Arrow {
     background-color: #fafafa;
     padding: 1px 0 1px 0;
+    align-items: center;
   }
  
