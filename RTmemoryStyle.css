@@ -49,7 +49,6 @@ body {
     padding-bottom: 187px;
     background-size: cover;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 .nav-list{
@@ -112,13 +111,16 @@ body {
     font-size: 36px;
     line-height: 54px;
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+   
 }
 
-.feautures {
-    padding: 63px 0 124px 0;
+.feauture {
+    padding: 31px 0 124px 0;
     background-color: #fafafa;
     width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .feautures-card {
@@ -165,7 +167,12 @@ body {
     flex-wrap: wrap;
     gap: 4rem;
     align-items: center;
-    
+}
+
+.feauture._animation {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);
 }
 
 .underline-one {
@@ -226,6 +233,7 @@ body {
     transition: width 0.5s;  /* Время эффекта */
 }
 
+/*
 .feauture {
     transform: translateY(10%);
     opacity: 0;
@@ -235,3 +243,5 @@ body {
     100% {transform: translateY(0);}
     100% {opacity: 1;}
  }
+ */
+ 
