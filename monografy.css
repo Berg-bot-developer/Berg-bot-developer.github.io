@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Rubik;
+    src: url('Rubik-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('Rubik-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('Rubik-SemiBold.ttf');
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 49.77px;
+    width: 180px;
+    display: inline-block;
+}
+
+.logo-image{
+    height: 49.77px;
+    width: 180px;
+}
+
+.intro {
+    background-image: url('monografon.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 27px;
+    margin-bottom: 57px;
+}
+
+.intro-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 86px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.intro-description {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;
+    color: white;
+    text-transform: uppercase;
+}
+.monografy-card {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-list{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-wrap: wrap-reverse;
+}
+
+.m1-card-image {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+}
+
+.intro-info {
+    text-align: center;
+}
+
+.m2-card-image {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+}
+
+.m-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(23, 81, 254);
+}
+
+.m-info {
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+
+
+.border-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Rubik';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.border-button:before, .border-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.border-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.border-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.border-button:hover:before, 
+.border-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.border-button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.border-button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.border-button:hover {
+  background: rgba(255, 255, 255, .2);
+}
