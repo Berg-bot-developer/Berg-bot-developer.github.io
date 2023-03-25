@@ -47,8 +47,7 @@ body {
     background-image: url('monografon.jpeg');
     background-size: cover;
     width: 100%;
-    height: auto;
-    padding-bottom: 200px;
+    padding-bottom: 187px;
 }
 
 .header {
@@ -83,7 +82,7 @@ body {
 
 .m-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: auto;
     flex-wrap: wrap-reverse;
 }
@@ -175,4 +174,17 @@ body {
 }
 .border-button:hover {
   background: rgba(255, 255, 255, .2);
+}
+
+.m-container {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.m-container._animation {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
 }
