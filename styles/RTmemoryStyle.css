@@ -1,0 +1,312 @@
+@font-face {
+    font-family: Rubik;
+    src: url('../fonts/Rubik-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('../fonts/Rubik-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('../fonts/Rubik-SemiBold.ttf');
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+@media (max-width:1150px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container{
+        max-width: none;
+    }
+}
+
+.f-container{       
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.logo{
+    height: 49.77px;
+    width: 180px;
+    display: inline-block;
+}
+
+.logo-image{
+    height: 49.77px;
+    width: 180px;
+
+}
+
+.intro {
+    background-image: linear-gradient(90deg, rgba(41, 37, 250, 0.5) 0%, rgba(71, 68, 242, 0.5) 100%), url('../Img/Korabl.jpeg');
+    padding-bottom: 187px;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 27px;
+    margin-bottom: 157px;
+}
+
+.navlink {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navitem {
+    margin-right: 30px;
+}
+
+.navitem:last-child {
+    margin-right: 0;
+}
+
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 86px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.intro-description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    width: 540px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 600px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feauture {
+    padding: 0px 0 124px 0;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.feautures-card {
+    width: 350px;
+}
+
+.f-card-image {
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.f-info {
+    background-color: white;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 28px;
+    margin-right: 28px;
+    padding: 33px 32px 25px 32px;
+    text-align: center;
+    margin-top: -93px;
+    position: relative;
+}
+
+.f-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+
+.f-description {
+    margin-bottom: 26px;
+}
+
+.f-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(23, 81, 254);
+}
+
+.feautures-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+}
+
+.f-container._animation {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+.underline-one {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(23, 81, 254); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(23, 81, 254); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.underline-one-nav {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one-nav:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one-nav:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+/*
+.feauture {
+    transform: translateY(10%);
+    opacity: 0;
+    animation: ani 3s forwards;
+}
+====
+ @keyframes ani {
+    100% {transform: translateY(0);}
+    100% {opacity: 1;}
+ }
+ */
+ .circular-arrow {
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgb(23, 81, 254);
+    border-radius: 100%;
+    position: relative;
+    animation: down 1.5s infinite;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .circular-arrow::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    width: 13px;
+    height: 13px;
+    border-left: 2px solid rgb(23, 81, 254);
+    border-bottom: 2px solid rgb(23, 81, 254);
+    transform: rotate(-45deg);
+  }
+  @keyframes down {
+    0% {
+    transform: translate(0);
+    }
+    20% {
+    transform: translateY(15px);
+    }
+    40% {
+    transform: translate(0);
+    }
+  }
+  
+  .Arrow {
+    background-color: #fafafa;
+    padding: 1px 0 1px 0;
+    align-items: center;
+  }
+ 

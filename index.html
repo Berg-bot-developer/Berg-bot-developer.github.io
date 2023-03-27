@@ -2,19 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>RTMemory</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="RTmemoryStyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/RTmemoryStyle.css">
     </head>
     <body>
         <section class="intro">
             <div class="container">
                 <header class="header">
                     <a href="#" class="logo">
-                        <img src="SevSU_Logo.png" alt="" class="logo-image">
+                        <img src="img/SevSU_Logo.png" alt="" class="logo-image">
                     </a>
 
                     <nav class="nav">
@@ -38,30 +36,35 @@
                     </nav>
                 </header>
                 <div class="intro-info">
+                    <div class="container"></div>
                 <h1 class="intro-title">История радиотехники</h1>
                 <p class="intro-description">Все, что Вы хотели узнать,<br> но боялись спросить</p>
                 </div>
+            </div>
             </div>
         </section>
         
         <main>
             <section class="Arrow">
-            <div class="circular-arrow"></div>
+                <div class="container">
+                    <div class="circular-arrow"></div>
+                </div>
             </section>
             <section class="feauture">
-                <div class="f-container">
-                    <h2 class="title">Категории</h2>
-                    <ul class="feautures-list">
+                <div class="container">
+                    <div class="f-container">
+                        <h2 class="title">Категории</h2>
+                        <ul class="feautures-list">
+                            <li class="feautures-card">
+                             <img src="img/popovcolor.png" alt="" class="f-card-image">
+                                <div class="f-info">
+                                 <h3 class="f-title">13 личностей</h3>
+                                    <p class="f-description">Величайшие люди из мира радиоэлектроники</p>
+                                    <a href="#" class="f-link underline-one">Узнать больше</a>
+                                </div>
+                            </li>
                         <li class="feautures-card">
-                            <img src="popovcolor.png" alt="" class="f-card-image">
-                            <div class="f-info">
-                                <h3 class="f-title">13 личностей</h3>
-                                <p class="f-description">Величайшие люди из мира радиоэлектроники</p>
-                                <a href="#" class="f-link underline-one">Узнать больше</a>
-                            </div>
-                        </li>
-                        <li class="feautures-card">
-                            <img src="Radiogorka.png" alt="" class="f-card-image">
+                            <img src="img/Radiogorka.png" alt="" class="f-card-image">
                             <div class="f-info">
                                 <h3 class="f-title">11 объектов</h3>
                                 <p class="f-description">Исторические достопримечательности и памятники архитектуры</p>
@@ -69,7 +72,7 @@
                             </div>
                         </li>
                         <li class="feautures-card">
-                            <img src="Monograf.png" alt="" class="f-card-image">
+                            <img src="img/Monograf.png" alt="" class="f-card-image">
                             <div class="f-info">
                                 <h3 class="f-title">2 монографии</h3>
                                 <p class="f-description">Все самые достоверные факты об истории радиоэлектроники</p>
@@ -77,8 +80,9 @@
                             </div>
                         </li>
                     </ul>
+                    </div>
                 </div>
         </main>
-        <script src="animation.js"></script>
+        <script src="js/f-animation.js"></script>
     </body>
 </html>
