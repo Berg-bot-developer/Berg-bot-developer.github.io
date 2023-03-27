@@ -28,8 +28,35 @@ body {
 }
 
 .container{
-    width: 80%;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0px 15px;
+}
+
+@media (max-width:1150px) {
+    div.container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    div.container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    div.container{
+        max-width: none;
+    }
+    
+    ul.m-list {
+        gap: 2rem;
+    }
+
+    header.header {
+        justify-content: space-around;
+    }
 }
 
 .logo{
@@ -177,8 +204,6 @@ body {
 }
 
 .m-container {
-    width: 80%;
-    margin: 0 auto;
     opacity: 0;
     transform: translateY(10%);
 }
