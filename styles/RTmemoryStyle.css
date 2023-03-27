@@ -1,6 +1,6 @@
 .html {
-    overflow-x: hidden;
-    min-height: -webkit-fill-available;
+    overflow-x: hidden; 
+    height: -webkit-fill-available;
 }
 
 @font-face {
@@ -29,6 +29,8 @@ body {
     font-family: Rubik;
     width: 100%;
     overflow-x:hidden;
+    height: 100vh;
+    height: -webkit-fill-available;
 }
 
 .container{
