@@ -1,3 +1,7 @@
+.html {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: Rubik;
     src: url('../fonts/Rubik-Regular.ttf');
@@ -30,6 +34,8 @@ body {
     max-width: 1150px;
     margin: 0 auto;
     padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:1150px) {
@@ -42,6 +48,9 @@ body {
     div.container{
         max-width: 750px;
     }
+    header.header{
+        margin-bottom: 130px;
+    }
 }
 
 @media (max-width:767px) {
@@ -52,6 +61,7 @@ body {
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: space-evenly;
+        margin-bottom: 80px;
     }
     h1.intro-title{
         font-size: 2rem;
@@ -79,9 +89,10 @@ body {
 
 .intro {
     background-image: linear-gradient(90deg, rgba(41, 37, 250, 0.5) 0%, rgba(71, 68, 242, 0.5) 100%), url('../Img/Korabl.jpeg');
-    padding-bottom: 187px;
     background-size: cover;
     width: 100%;
+    margin: auto 0;
+    min-height: calc(100vh - 94px);
 }
 
 .nav-list{
@@ -118,6 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: auto;
 }
 
 .intro-title {

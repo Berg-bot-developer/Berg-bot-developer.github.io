@@ -1,3 +1,7 @@
+.html {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: Rubik;
     src: url('../fonts/Rubik-Regular.ttf');
@@ -51,7 +55,7 @@ body {
     }
     
     ul.m-list {
-        gap: 2rem;
+        gap: 4rem;
     }
 
     header.header {
