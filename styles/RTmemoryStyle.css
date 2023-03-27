@@ -1,6 +1,8 @@
 .html {
     overflow-x: hidden; 
-    height: --visual-viewport-height;
+}
+:root {
+    --visual-viewport-height : 100vh;
 }
 
 @font-face {
@@ -29,8 +31,6 @@ body {
     font-family: Rubik;
     width: 100%;
     overflow-x:hidden;
-    height: 100vh;
-    height: --visual-viewport-height;
 }
 
 .container{
@@ -95,8 +95,7 @@ body {
     background-size: cover;
     width: 100%;
     margin: auto 0;
-    min-height: calc(100vh - 94px);
-    min-height: --visual-viewport-height;
+    min-height: calc(var(--visual-viewport-height) - 94px);
 }
 
 .nav-list{
