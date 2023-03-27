@@ -115,7 +115,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     height: auto;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .m1-card-image {
