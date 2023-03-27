@@ -92,7 +92,7 @@ body {
     background-size: cover;
     width: 100%;
     margin: auto 0;
-    min-height: calc(100vh - 94px);
+    min-height: calc(var(--visual-viewport-height - 94px));
 }
 
 .nav-list{
