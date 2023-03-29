@@ -375,10 +375,8 @@ body {
 }
 
 .nav-button {
-    position: static;
+    position: relative;
     z-index: 9;
-    top: 46px;
-    right: 30px;
     display: none;
 }
 
@@ -390,14 +388,6 @@ body {
 .footer-img {
     background-size: cover;
     padding-bottom: 36px;
-}
-
-.fixed-button {
-    position: fixed;
-    z-index: 9;
-    top: 46px;
-    right: 30px;
-    display: none;
 }
 
 .nav-button._click {

@@ -11,10 +11,10 @@ function getVisualViewportHeight() {
 
   navBtn.onclick = () => {
       if (nav.classList.toggle('open')) {
-          navBtnImg.src="./img/NAVCLOSE.svg"
+          navBtnImg.src="./Img/NAVCLOSE.svg"
           navBtn.classList.toggle('_click')
       } else {
-          navBtnImg.src="./img/menunav.png"
+          navBtnImg.src="./Img/menunav.png"
           navBtn.classList.remove('_click')
       }
   }
