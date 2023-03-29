@@ -63,12 +63,49 @@ body {
         justify-content: space-evenly;
         margin-bottom: 80px;
     }
-    h1.intro-title{
+    h1.intro-title {
         font-size: 2rem;
         line-height: 40px;
     }
-}
 
+    ul.nav-list {
+        display: none;
+    }
+    
+    button.nav-button {
+        display: block; 
+    }
+    
+    .header-nav {
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 34px;
+        font-weight: 600;
+        color: black;
+    }
+
+    a.navlink {
+        color: #828282;
+    }
+    a.navlink.active {
+        color: black;
+    }
+}
+    
 .f-container{       
     margin: 0 auto;
     opacity: 0;
@@ -84,7 +121,6 @@ body {
 .logo-image{
     height: 49.77px;
     width: 180px;
-
 }
 
 .intro {
@@ -95,7 +131,7 @@ body {
     min-height: calc(var(--visual-viewport-height) - 94px);
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     list-style-type: none;
 }
@@ -160,7 +196,6 @@ body {
 }
 
 .feauture {
-    padding: 0px 0 124px 0;
     background-color: #fafafa;
     width: 100%;
 }
@@ -220,7 +255,7 @@ body {
 .underline-one {
     position: relative;
     cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none; 
 }
 .underline-one:after {
 	content: "";
@@ -289,8 +324,8 @@ body {
  */
 
  .circular-arrow {
-    width: 45px;
-    height: 45px;
+    width: 43px;
+    height: 43px;
     border: 2px solid rgb(23, 81, 254);
     border-radius: 100%;
     position: relative;
@@ -331,3 +366,44 @@ body {
     align-items: center;
   }
  
+  .nav-link {
+    color: #828282;
+}
+
+.nav-link.active {
+    color: black;
+}
+
+.nav-button {
+    position: static;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+    display: none;
+}
+
+.footer {
+    display: flex;
+    background-color: #fafafa;
+}
+
+.footer-img {
+    background-size: cover;
+    padding-bottom: 36px;
+}
+
+.fixed-button {
+    position: fixed;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+    display: none;
+}
+
+.nav-button._click {
+    position: fixed;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+    display: block;
+}

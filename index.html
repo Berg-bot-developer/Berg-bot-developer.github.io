@@ -8,16 +8,18 @@
         <link rel="stylesheet" href="styles/RTmemoryStyle.css">
     </head>
     <body>
+        
         <section class="intro">
             <div class="container">
                 <header class="header">
+                    
                     <a href="#" class="logo">
                         <img src="Img/SevSU_Logo.png" alt="" class="logo-image">
                     </a>
-                    <nav class="nav">
+                    <nav id="nav" class="nav">
                         <ul class="nav-list">
                             <li class="navitem underline-one-nav">
-                                <a href="#" class="navlink">
+                                <a href="#" class="navlink active">
                                     Новости
                                 </a>
                             </li>
@@ -33,7 +35,13 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/menunav.png" alt="" srcset="">
+                    </button>
+
                 </header>
+                
                 <div class="intro-info">
                 <h1 class="intro-title">История радиотехники</h1>
                 <p class="intro-description">Все, что Вы хотели узнать,<br> но боялись спросить</p>
@@ -80,6 +88,11 @@
                     </div>
                 </div>
         </main>
+        
+        <footer>
+        </footer>
+
+
         <script src="js/f-animation.js"></script>
         <script src="js/script.js"></script>
     </body>
