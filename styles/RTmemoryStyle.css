@@ -2,6 +2,8 @@
     overflow-x: hidden; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 @font-face {
     font-family: Rubik;
     src: url('../fonts/Rubik-Regular.ttf');
@@ -198,7 +200,7 @@ body {
 .feauture {
     background-color: #fafafa;
     width: 100%;
-    padding-bottom: 57px;
+    padding-bottom: 4rem;
 }
 
 .feautures-card {
@@ -381,20 +383,55 @@ body {
     display: none;
 }
 
-.footer {
-    display: flex;
-    background-color: #fafafa;
-}
-
-.footer-img {
-    background-size: cover;
-    padding-bottom: 36px;
-}
-
 .nav-button._click {
     position: fixed;
     z-index: 9;
     top: 46px;
     right: 30px;
     display: block;
+}
+
+.footer {
+    background-color: #fafafa;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 0;
+    border-style: solid;
+    border-top-width: 2px;
+    border-color: rgb(23, 81, 254);
+}
+
+.left-info {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.right-info {
+   display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
