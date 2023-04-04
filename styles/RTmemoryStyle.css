@@ -106,6 +106,14 @@ body {
     a.navlink.active {
         color: black;
     }
+
+    h1.footer-title {
+        font-size: 16px;
+    }
+
+    p.footer-text {
+        font-size: 8px;
+    }
 }
     
 .f-container{       
