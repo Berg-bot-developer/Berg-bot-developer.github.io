@@ -119,6 +119,10 @@ body {
         padding: 6px 6px;
         font-size: 15px;
     }
+
+    div.popup-content {
+        width: 80%;
+    }
 }
     
 .f-container{       
@@ -128,7 +132,7 @@ body {
 }
 
 .logo{
-    height: 49.77px;
+    height: 49.77px;    
     width: 180px;
     display: inline-block;
 }
@@ -463,10 +467,11 @@ body {
   
   .popup-content {
     background-color: #fefefe;
+    border-radius: 10px;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
   }
   
   .close-button {
