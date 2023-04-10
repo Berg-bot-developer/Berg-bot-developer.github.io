@@ -72,6 +72,15 @@ body {
     p.footer-text {
         font-size: 8px;
     }
+
+    button.button {
+        padding: 6px 6px;
+        font-size: 15px;
+    }
+
+    div.popup-content {
+        width: 80%;
+    }
 }
 
 .logo{
@@ -230,6 +239,7 @@ body {
 .footer {
     background-color: rgb(0, 115, 206);
     color: white;
+    padding-top: 60px;
 }
 
 .footer-row {
@@ -273,3 +283,119 @@ body {
     font-size: 16px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    color: black;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: rgb(23, 81, 254);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.button:hover {
+    color: #fff;
+    outline: 0;
+    transition: 0.5s;
+    background-color: rgb(23, 81, 254);
+}
+
+.popup-title {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.popup-text {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    border: 2px solid rgb(23, 81, 254);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.email {
+    border: 2px solid rgb(23, 81, 254);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.textarea {
+    border: 2px solid rgb(23, 81, 254);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: vertical;
+}
+
+.send-button {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.send-button:hover {
+    color: rgb(23, 81, 254);
+}

@@ -6,6 +6,14 @@
             <title>RTMemory</title>
             <link rel="stylesheet" href="styles/reset.css">
             <link rel="stylesheet" href="styles/monografy.css">
+            <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("W1t0lOkmOZsojBnb_");
+            })();
+            </script>
         </head>
 
         <body>
@@ -50,13 +58,31 @@
                         </div>
     
                         <div class="right-info">
-                            <h1 class="footer-title">Связь с нами</h1>
-                            <p class="footer-text">rtforce@gmail.com</p>
+                            <button id="popup-button" class="button">Нашли ошибку?</button>
+
+                            <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <span class="close-button">&times;</span>
+                                <h2 class="popup-title">Свяжитесь с нами</h2>
+                                <!-- <p class="popup-text">Текст сообщения</p> -->
+                                <form id="contact-form" class="contact-form">
+                                    <label for="name" class="label-name">Имя:</label>
+                                    <input type="text" class="name" id="name" name="name" required>
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" class="email" id="email" name="email" required>
+                                    <label for="message">Сообщение:</label>
+                                    <textarea id="message" name="message" class="textarea" rows="5" required></textarea>
+                                    <button type="submit" class="send-button">Отправить</button>
+                                  </form>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
     
             </footer>
-            <script src="./js/script.js"></script>
+            <script src="js/mono-script.js"></script>
+            <script src="js/email.js"></script>
+            <script src="js/m-animation.js"></script>
         </body>
     </html>
