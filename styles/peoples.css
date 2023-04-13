@@ -766,3 +766,25 @@ body {
 .hover-effect-scale2 li:hover div {
     opacity: 1;
 }
+
+.o-container {
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.o-container._animation {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+.p-container {
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.p-container._animation {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
