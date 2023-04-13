@@ -61,6 +61,43 @@ body {
         padding-bottom: 2rem;
     }
 
+    ul.nav-list {
+        display: none;
+    }
+    
+    button.nav-button {
+        display: block; 
+    }
+    
+    .header-nav {
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 34px;
+        font-weight: 600;
+        color: black;
+    }
+
+    a.navlink {
+        color: #828282;
+    }
+    a.navlink.active {
+        color: black;
+    }
+
     header.header {
         justify-content: space-around;
     }
@@ -106,7 +143,51 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 33px;
-    margin-bottom: 33px;
+    padding-bottom: 27px;
+    margin-bottom: 50px;
+}
+
+.navlink {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navitem {
+    margin-right: 30px;
+}
+
+.navitem:last-child {
+    margin-right: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: #828282;
+}
+
+.nav-link.active {
+    color: black;
+}
+
+.nav-button {
+    position: relative;
+    z-index: 9;
+    display: none;
+}
+
+.nav-button._click {
+    position: fixed;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+    display: block;
 }
 
 .intro-title {
@@ -407,4 +488,33 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(0, 115, 206);
+}
+
+.underline-one-nav {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one-nav:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one-nav:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
 }
