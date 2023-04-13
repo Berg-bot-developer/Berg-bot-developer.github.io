@@ -191,6 +191,11 @@ body {
         grid-gap: 30px;
     }
 
+    ul.hover-effect-scale3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
     ul.hover-effect-scale li {
         height: 150px;
         width: 150px;
@@ -199,6 +204,63 @@ body {
     ul.hover-effect-scale2 li {
         height: 150px;
         width: 150px;
+    }
+
+    ul.hover-effect-scale3 li {
+        height: 150px;
+        width: 150px;
+    }
+
+    ul.hover-effect-scale2 li h3 {
+        font-size: 12px;
+    }
+
+    ul.hover-effect-scale3 li h3 {
+        font-size: 12px;
+    }
+
+    ul.hover-effect-scale li h3 {
+        font-size: 12px;
+    }
+
+    ul.hover-effect-scale li p {
+        font-size: 10px;
+    }
+
+    ul.hover-effect-scale2 li p {
+        font-size: 10px;
+    }
+
+    ul.hover-effect-scale3 li p {
+        font-size: 10px;
+    }
+
+    ul.hover-effect-scale li a{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    ul.hover-effect-scale2 li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    ul.hover-effect-scale3 li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    button.button {
+        padding: 6px 6px;
+        font-size: 15px;
+    }
+
+    h1.footer-title {
+        font-size: 16px;
+    }
+
+    p.footer-text {
+        font-size: 8px;
     }
 }
 
@@ -243,11 +305,11 @@ body {
 .hover-effect-scale li h3{
     color: #fff;
     margin: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 .hover-effect-scale li p{
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     margin: 5px;
 }
@@ -296,9 +358,94 @@ body {
     opacity: 1;
 }
 
+.hover-effect-scale3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 100px;
+    list-style:none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    padding: 0;
+}
+.hover-effect-scale3 li {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-scale3 li h3{
+    color: #fff;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.hover-effect-scale3 li p{
+    font-size: 14px;
+    color: #fff;
+    margin: 5px;
+}
+.hover-effect-scale3 li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background: rgb(0, 115, 206);
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-scale3 li a:hover {
+    background: white;
+    color: rgb(0, 115, 206);
+}
+/* Выезжающий блок с текстом */ 
+.hover-effect-scale3 li > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-scale3 li:hover > div {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-scale3 li div {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.35); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+.hover-effect-scale3 li img {
+    transition: all 0.2s linear;
+}
+.hover-effect-scale3 li:hover img {
+    transform: scale(1.3);
+}
+.hover-effect-scale3 li:hover div {
+    opacity: 1;
+}
+
 .peoples-image {
     height: auto;
-    width: 100%;
+    width: auto;
     z-index: -1;
 }
 
@@ -567,11 +714,11 @@ body {
 .hover-effect-scale2 li h3{
     color: #fff;
     margin: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 .hover-effect-scale2 li p{
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     margin: 5px;
 }
