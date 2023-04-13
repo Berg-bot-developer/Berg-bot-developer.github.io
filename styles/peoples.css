@@ -117,6 +117,16 @@ body {
     header.header{
         margin-bottom: 130px;
     }
+    ul.hover-effect-scale {
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    ul.hover-effect-scale2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
 }
 
 @media (max-width:767px) {
@@ -168,6 +178,27 @@ body {
     }
     a.navlink.active {
         color: black;
+    }
+
+    ul.hover-effect-scale {
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    ul.hover-effect-scale2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    ul.hover-effect-scale li {
+        height: 150px;
+        width: 150px;
+    }
+
+    ul.hover-effect-scale2 li {
+        height: 150px;
+        width: 150px;
     }
 }
 
