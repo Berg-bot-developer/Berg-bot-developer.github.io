@@ -262,6 +262,10 @@ body {
     p.footer-text {
         font-size: 8px;
     }
+
+    div.popup-content {
+        width: 80%;
+    }
 }
 
 .title {
