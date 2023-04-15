@@ -112,7 +112,7 @@ body {
     }
 
     p.footer-text {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     button.button {
@@ -122,6 +122,12 @@ body {
 
     div.popup-content {
         width: 80%;
+    }
+
+    img.footer-img {
+        height: 75px;
+        width: 75px;
+        margin-bottom: 10px;
     }
 }
     
@@ -573,4 +579,16 @@ body {
 
 .label-name {
     color: black;
+}
+
+.footer-img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-url {
+    text-decoration: none;
+    color: rgb(23, 81, 254);
+    text-align: center;
 }
