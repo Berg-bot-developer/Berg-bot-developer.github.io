@@ -119,8 +119,6 @@ body {
     }
     ul.hover-effect-scale {
         grid-template-columns: repeat(2, 1fr);
-
-
     }
 
     ul.hover-effect-scale2 {
@@ -194,13 +192,13 @@ body {
 
     ul.hover-effect-scale3 {
         grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(4, 150px);
+        grid-template-rows: repeat(5, 150px);
         grid-gap: 30px;
     }
 
     ul.hover-effect-scale4 {
-        grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(1, 150px);
+        grid-template-rows: repeat(1, 150px);
         grid-gap: 30px;
     }
 
@@ -397,7 +395,7 @@ body {
 
 .hover-effect-scale3 {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(5, 200px);
     grid-template-rows: repeat(2, 200px);
     grid-gap: 30px;
     list-style:none;
@@ -850,7 +848,7 @@ body {
 
 .hover-effect-scale4 {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(1, 200px);
     grid-template-rows: repeat(1, 200px);
     list-style: none;
     grid-gap: 30px;
