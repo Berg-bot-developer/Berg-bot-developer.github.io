@@ -122,7 +122,16 @@ body {
     img.footer-img {
         height: 75px;
         width: 75px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    img.sevsu-img {
+        height: 90px;
+        width: auto;
+    }
+
+    li.footer-item {
+        margin-right: 10px;
     }
 }
 
@@ -343,9 +352,7 @@ body {
 .left-info {
     display: flex;
     padding-top: 40px;
-    padding-bottom: 40px;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
 }
 
@@ -363,6 +370,8 @@ body {
     font-weight: 600;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    text-align: start;
+    margin-bottom: 20px;
 }
 
 .footer-text {
@@ -535,4 +544,24 @@ body {
     text-decoration: none;
     color: white;
     text-align: center;
+}
+
+.footer-ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-item {
+    display: flex;
+    margin-right: 30px;
+}
+
+.footer-title:last-child {
+    margin-right: 0px;
+}
+
+.sevsu-img {
+    width: 100%;
+    height: 100%;
 }

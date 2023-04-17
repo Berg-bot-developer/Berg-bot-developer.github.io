@@ -284,7 +284,7 @@ body {
     }
 
     p.footer-text {
-        font-size: 10   x;
+        font-size: 10px;
     }
 
     div.popup-content {
@@ -294,7 +294,16 @@ body {
     img.footer-img {
         height: 75px;
         width: 75px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    img.sevsu-img {
+        height: 90px;
+        width: auto;
+    }
+
+    li.footer-item {
+        margin-right: 10px;
     }
 }
 
@@ -504,9 +513,7 @@ body {
 .left-info {
     display: flex;
     padding-top: 40px;
-    padding-bottom: 40px;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
 }
 
@@ -524,6 +531,8 @@ body {
     font-weight: 600;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    text-align: start;
+    margin-bottom: 20px;
 }
 
 .footer-text {
@@ -837,7 +846,7 @@ body {
 .footer-img {
     height: 100px;
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footer-url {
@@ -959,4 +968,24 @@ body {
 }
 .hover-effect-scale4 li:hover div {
     opacity: 1;
+}
+
+.footer-ul {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-item {
+    display: flex;
+    margin-right: 30px;
+}
+
+.footer-title:last-child {
+    margin-right: 0px;
+}
+
+.sevsu-img {
+    width: 100%;
+    height: 100%;
 }
