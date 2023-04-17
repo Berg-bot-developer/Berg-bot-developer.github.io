@@ -606,7 +606,6 @@ body {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
-    justify-content: center;
 }
 
 .footer-item {
