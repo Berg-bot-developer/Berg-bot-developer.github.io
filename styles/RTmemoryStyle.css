@@ -135,7 +135,7 @@ body {
     }
 
     p.footer-text {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     button.button {
@@ -148,13 +148,13 @@ body {
     }
 
     img.footer-img {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         margin-bottom: 5px;
     }
 
     img.sevsu-img {
-        height: 50px;
+        height: 40px;
         width: auto;
     }
 
@@ -164,7 +164,7 @@ body {
 
     img.popov-img {
         width: auto;
-        height: 50px;
+        height: 40px;
         margin-bottom: 5px;
     }
 }
