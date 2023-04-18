@@ -49,7 +49,7 @@ body {
 
 @media (max-width:1920px) {
     div.footer-container{
-        max-width: 85%;
+        max-width: 90%;
     }
 }
 
@@ -58,7 +58,7 @@ body {
         max-width: 970px;
     }
     div.footer-container{
-        max-width: 85%;
+        max-width: 90%;
     }
 }
 
@@ -67,7 +67,7 @@ body {
         max-width: 750px;
     }
     div.footer-container{
-        max-width: 85%;
+        max-width: 90%;
     }
 }
 
@@ -76,7 +76,7 @@ body {
         max-width: none;
     }
     div.footer-container{
-        max-width: 85%;
+        max-width: 90%;
     }
     
     ul.m-list {
