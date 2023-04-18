@@ -39,9 +39,26 @@ body {
     padding: 0px 15px;
 }
 
+.footer-container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1920px) {
+    div.footer-container{
+        max-width: 85%;
+    }
+}
+
 @media (max-width:1150px) {
-    div.container{
+    div.container{  
         max-width: 970px;
+    }
+    div.footer-container{
+        max-width: 85%;
     }
 }
 
@@ -49,11 +66,17 @@ body {
     div.container{
         max-width: 750px;
     }
+    div.footer-container{
+        max-width: 85%;
+    }
 }
 
 @media (max-width:767px) {
     div.container{
         max-width: none;
+    }
+    div.footer-container{
+        max-width: 85%;
     }
     
     ul.m-list {

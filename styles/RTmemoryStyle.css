@@ -40,15 +40,35 @@ body {
     flex-direction: column;
 }
 
+.footer-container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1920px) {
+    div.footer-container{
+        max-width: 85%;
+    }
+}
+
 @media (max-width:1150px) {
     div.container{
         max-width: 970px;
+    }
+    div.footer-container{
+        max-width: 85%;
     }
 }
 
 @media (max-width:992px) {
     div.container{
         max-width: 750px;
+    }
+    div.footer-container{
+        max-width: 85%;
     }
     header.header{
         margin-bottom: 130px;
@@ -58,6 +78,9 @@ body {
 @media (max-width:767px) {
     div.container{
         max-width: none;
+    }
+    div.footer-container{
+        max-width: 85%;
     }
     header.header{
         flex-wrap: wrap;
